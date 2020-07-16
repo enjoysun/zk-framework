@@ -1,0 +1,9 @@
+# Environment gather
+org.springframework.boot.env.EnvironmentPostProcessor=com.lit.soullark.framework.utils.FrameworkEnvironmentPostProcessor
+
+# configuration run
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.lit.soullark.framework.configure.CuratorFrameworkConnectionConfigure,\
+  com.lit.soullark.framework.configure.CuratorFrameworkInstanceConfigure,\
+  com.lit.soullark.framework.registrar.AutoBindBeanRegistrar,\
+  com.lit.soullark.framework.handles.impl.LarkInitializingBeanProcessor
